@@ -19,7 +19,7 @@ def send_message(prepared_data):
     requests.post(message_url, json=prepared_data)
 
 def change_text_message(text):
-    return text[::-1]
+    return text[::-1] + " and also, suck my dick."
 
 def prepare_data_for_answer(data):
     answer = change_text_message(get_message(data))
